@@ -3,8 +3,8 @@
 use TRANSPORT\Transport;
 use TRANSPORT\Render;
 use TRANSPORT\Car;
-use TRANSPORT\Bike;
-use TRANSPORT\Motorcycle;
+
+
 
 ?>
 
@@ -21,17 +21,13 @@ use TRANSPORT\Motorcycle;
 <body>
     <?php
 
-    $transport = new Transport('Polo', 'Wolkswagen');
-    $transport->addPrice('30000');
-    $transport->addDescription('Labai gera masina');
-    $transport->changeModel('Golf');
-    Render::display($transport->getAllInfo());
+
 
     $car = new Car('DFR', 'Kauno tiltai');
     $car->addEngine('V8');
     $car->addKw('360');
     Render::display($car->getAllInfo());
-
+/*
     $bike = new Bike('Dviratis', 'ABCDEF');
     $bike->addCategory('kalnų');
     $bike->addRunners('18 bėgių');
@@ -43,7 +39,7 @@ use TRANSPORT\Motorcycle;
     $motorcycle->addKw('75 kw');
     $motorcycle->addPrice('14 000 eur');
 
-    Render::display($motorcycle->getAllInfo());
+    Render::display($motorcycle->getAllInfo()); */
     ?>
 
 
